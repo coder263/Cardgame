@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     var Leftscore = 0
     var Rightscore = 0
     
+    @IBAction func Reset(_ sender: Any) {
+   RightScoreLabel.text = String(0)
+   LeftScoreLabel.text = String(0)
+   Leftscore = 0
+   Rightscore = 0
+        LeftImageview.image = UIImage(named: "back")
+        RightImageview.image = UIImage(named: "back")
+        }
+    
     
 
     override func viewDidLoad() {
@@ -63,12 +72,6 @@ class ViewController: UIViewController {
         }
         
         else if leftRandomnumber == rightRandomnumber {}
-        
-        
-    
-    
-    
-    
     
     
     }

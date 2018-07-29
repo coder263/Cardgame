@@ -27,24 +27,38 @@
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9ta-tO-m4I">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-96-fIu">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVB-to-9RT">
                                         <rect key="frame" x="0.0" y="174" width="414" height="174"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-Aj-mUo">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="174"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="174"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-Aj-v2r">
+                                                <rect key="frame" x="120" y="0.0" width="174" height="174"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMZ-6J-OmN"/>
+                                                </connections>
+                                            </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-ih-OAY">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="174"/>
+                                                <rect key="frame" x="294" y="0.0" width="120" height="174"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-yk-v75">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-96-fIu">
                                         <rect key="frame" x="0.0" y="348" width="414" height="174"/>
-                                        <state key="normal" image="dealbutton"/>
-                                        <connections>
-                                            <action selector="dealtapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpH-99-Fqh"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-yk-v75">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                                                <state key="normal" image="dealbutton"/>
+                                                <connections>
+                                                    <action selector="dealtapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpH-99-Fqh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lIP-60-EBH">
                                         <rect key="frame" x="0.0" y="522" width="414" height="174"/>
                                         <subviews>
